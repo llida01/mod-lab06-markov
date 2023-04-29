@@ -1,5 +1,11 @@
 // Copyright 2021 GHA Test Team
 #include "gtest/gtest.h"
+#include <iostream>
+#include <deque>
+#include <string>
+#include <map>
+#include <vector>
+#include <fstream>
 #include "textgen.h"
 
 TEST(test1, CountPrefix) {
