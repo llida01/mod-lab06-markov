@@ -7,7 +7,7 @@
 #include <fstream>
 #include <cstdlib>
 #include <random>
-#include <algorithm> 
+#include <algorithm>
 #include "textgen.h"
 
 const int NPREF = 2;
