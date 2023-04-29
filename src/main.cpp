@@ -1,4 +1,5 @@
-﻿#include <iostream>
+// Copyright 2022 UNN-IASR
+#include <iostream>
 #include <deque>
 #include <string>
 #include <map>
@@ -8,8 +9,7 @@
 #include <random>
 #include "textgen.h"
 
-int main()
-{
+int main() {
     setlocale(LC_ALL, "Russian");
     std::vector <std::string> text = ReadFile("text1.txt");
     std::deque <prefix> prefixTable = CreatePrefixTable(text);
