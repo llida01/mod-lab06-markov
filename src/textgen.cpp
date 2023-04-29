@@ -40,7 +40,7 @@ std::vector <std::string> ReadFile(std::string name) {
 
 bool Find(std::deque <prefix> prefixTable, prefix curr) {
     std::deque<prefix>::iterator itr;
-    itr = std::find(prefixTable.begin(), prefixTable.end(), curr);
+    itr = find(prefixTable.begin(), prefixTable.end(), curr);
     if (itr != prefixTable.end()) {
         return true;
     } else {
