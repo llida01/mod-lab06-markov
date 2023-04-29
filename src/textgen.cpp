@@ -38,7 +38,7 @@ std::vector <std::string> ReadFile(std::string name) {
     return text;
 }
 
-bool find(std::deque <prefix> prefixTable, prefix curr) {
+bool Find(std::deque <prefix> prefixTable, prefix curr) {
     std::deque<prefix>::iterator itr;
     itr = std::find(prefixTable.begin(), prefixTable.end(), curr);
     if (itr != prefixTable.end()) {
@@ -71,7 +71,7 @@ std::deque <prefix> CreatePrefixTable(std::vector <std::string> text) {
         for (int j = 0; j < NPREF; j++) {
             curr.push_back(text[i + j]);
         }
-        if (!find(prefixTable, curr)) {
+        if (!Find(prefixTable, curr)) {
             prefixTable.push_back(curr);
         }
     }
