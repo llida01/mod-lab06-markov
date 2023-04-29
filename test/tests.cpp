@@ -1,13 +1,6 @@
 // Copyright 2021 GHA Test Team
 #include "gtest/gtest.h"
-#include <iostream>
-#include <fstream>
-#include <deque>
-#include <string>
-#include <map>
-#include <vector>
 #include "textgen.h"
-typedef std::deque<std::string> prefix;
 
 TEST(test1, CountPrefix) {
     std::vector <std::string> text = ReadFile("text2.txt");
